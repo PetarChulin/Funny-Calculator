@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <script src="calculate.js" defer></script>
+    <title>Funny calculator</title>
+</head>
+
+<body id="body">
+    <div class="common">
+    <h1 id="calc">CALCULATOR</h1>
+
+    <form id="myID">
+        <div id="dig"><input placeholder="0" type="text" name="digits" /></div>
+
+        <div>
+            <button type="button" onclick="document.getElementsByName('digits')[0].value += 7">7</button>
+            <button type="button" onclick="document.getElementsByName('digits')[0].value += 8">8</button>
+            <button type="button" onclick="document.getElementsByName('digits')[0].value += 9">9</button>
+            <button type="button" onclick="document.getElementsByName('digits')[0].value += '*'">*</button>
+        </div>
+
+        <div>
+            <button type="button" onclick="document.getElementsByName('digits')[0].value += 4">4</button>
+            <button type="button" onclick="document.getElementsByName('digits')[0].value += 5">5</button>
+            <button type="button" onclick="document.getElementsByName('digits')[0].value += 6">6</button>
+            <button type="button" onclick="document.getElementsByName('digits')[0].value += '/'">/</button>
+        </div>
+        <div>
+            <button type="button" onclick="document.getElementsByName('digits')[0].value += 1">1</button>
+            <button type="button" onclick="document.getElementsByName('digits')[0].value += 2">2</button>
+            <button type="button" onclick="document.getElementsByName('digits')[0].value += 3">3</button>
+            <button type="button" onclick="document.getElementsByName('digits')[0].value += '-'">-</button>
+        </div>
+        <div>
+            <button type="button" onclick="document.getElementsByName('digits')[0].value += 0">0</button>
+            <button type="button" onclick="clearFields()">C</button>
+            <button type="button" onclick="calc(),checkClick()">=</button>
+            <button type="button" onclick="document.getElementsByName('digits')[0].value += '+'">+</button>
+            <button type="button" onclick="document.getElementsByName('digits')[0].value += '.'">.</button>
+
+        </div>
+    </form>
+</div>
+</body>
+
+</html>
