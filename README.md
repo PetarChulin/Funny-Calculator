@@ -1,2 +1,2 @@
 ﻿# Funny-Calculator
-Download all files and run calculator.html
+https://petarchulin.github.io/Funny-Calculator.github.io
